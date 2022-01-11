@@ -1,3 +1,51 @@
 .main
   background-image: url(./img/Main-cover.jpg)
   height: 900px
+  color: white
+  padding: 0 120px // TODO: need variable or class
+
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 126px
+
+.logo
+  height: 26px
+  width: 126px
+  background-image: url(./img/logo.png)
+
+.burger
+  height: 26px
+  width: 26px
+  background-color: transparent
+  border: none
+  background-image: url(./img/burger.png)
+
+.tagline
+  margin-top: 346px
+  font-size: 62px
+  line-height: 1.24
+
+.main-menu // TODO
+  margin-top: 34px
+  font-size: 14px
+  ul
+    display: flex
+    li
+      a
+        color: rgba(255, 255, 255, 0.74)
+        text-decoration: none
+        text-transform: uppercase
+        margin-right: 20px
+        &:active
+          color: white
+
+.go-down
+  width: 52px
+  height: 52px
+  margin-top: 88px
+  border: 2px solid white
+  background-color: transparent
+  border-radius: 50%
+  background: center url(./img/arrow.png) no-repeat
