@@ -1,61 +1,67 @@
 .about
-  padding: 0 120px
+  padding: 0 $responsive-padding
   padding-top: 153px
 
-.text
-  display: flex
-  justify-content: space-between
+  &__text-container
+    display: flex
+    justify-content: space-between
 
-  h2
+  &__title
     font-size: 36px
     font-family: "SF Pro Display Medium"
     font-weight: 300
 
-.description
-  width: 580px
+  &__description
+    width: 580px
 
-  h3
+  &__description-head
     padding-left: 40px
     font-family: "Playfair Display Semibold"
-    letter-spacing: -0.3px
+    font-size: 18px
     border-left: 2px solid #DEDEDE
     margin-top: -3px
     line-height: 1.4
 
-  p
+  &__description-text
     padding-left: 42px
-    margin-top: 33px
+    margin-top: 35px
     line-height: 1.62
     font-family: 'SF Pro Display'
     color: rgba(34, 34, 34, 0.62)
 
-.features
-  padding: 0 55px
-  margin-top: 118px
-  padding-bottom: 150px
-  border-bottom: 2px solid #DEDEDE
-  ul
+  &__features
+    padding: 0 55px
+    margin-top: 119px
+    padding-bottom: 150px
+    border-bottom: 2px solid #DEDEDE
     display: flex
     justify-content: space-around
 
-.feature-item
+.feature
   width: 260px
   text-align: center
-  h4
-    margin-top: 27px
+
+  &__header
+    margin-top: 30px
     font-family: SF Pro Display Medium
-    letter-spacing: 0.9px
+    letter-spacing: 0.2px
     font-weight: 300
-  p
+    font-size: 17.6px
+  &__text
     margin-top: 16px
     font-family: SF Pro Display
     color: rgba(34, 34, 34, 0.62)
     line-height: 26px
 
-.icon
-  display: inline-block
-  width: 76px
-  height: 76px
-  border: 1px solid rgba(34, 34, 34, 0.26)
-  border-radius: 50%
-  text-align: center
+  &__icon
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    width: 76px
+    height: 76px
+    box-sizing: border-box
+    border: 1px solid rgba(34, 34, 34, 0.26)
+    border-radius: 50%
+
+  &__icon--triangle
+    padding-bottom: 4px

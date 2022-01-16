@@ -1,53 +1,70 @@
 .main
+  background-color: #264f83
   background-image: url(./img/Main-cover.jpg)
   height: 900px
   color: white
-  padding: 0 120px // TODO: need variable or class
+  padding: 0 $responsive-padding
 
-.header
-  display: flex
-  justify-content: space-between
-  align-items: center
-  height: 126px
+  &__header
+    display: flex
+
+    justify-content: space-between
+    align-items: center
+    height: 126px
+
+  &__tagline
+    margin-top: 346px
+    margin-bottom: 34px
+    font-size: 62px
+    line-height: 1.24
+    font-family: SF Pro Display Semibold
 
 .logo
+  display: block
   height: 26px
   width: 126px
   background-image: url(./img/logo.png)
 
-.burger
+.burger-btn
+  cursor: pointer
   height: 26px
   width: 26px
   background-color: transparent
   border: none
   background-image: url(./img/burger.png)
 
-.tagline
-  margin-top: 346px
-  font-size: 62px
-  line-height: 1.24
-  font-family: SF Pro Display Semibold
-
-.main-menu // TODO
-  margin-top: 34px
+.main-menu
   font-size: 14px
-  ul
+  font-family: 'SF Pro Display Medium'
+  text-transform: uppercase
+  color: rgba(255, 255, 255, 0.74)
+
+  &__list
     display: flex
-    li
-      a
-        color: rgba(255, 255, 255, 0.74)
-        text-decoration: none
-        text-transform: uppercase
-        margin-right: 28px
-        font-family: 'SF Pro Display Medium'
-        &:active
-          color: white
+
+  &__item
+    position: relative
+    margin-right: 28px
+
+    &:hover
+      color: white
+
+    &:hover::after
+      content: ""
+      display: block
+      position: absolute
+      bottom: -12px
+      width: 22px
+      height: 2px
+      background-color: white
 
 .go-down
+  @include arrow-btn(90deg, white, white)
   width: 52px
   height: 52px
   margin-top: 88px
   border: 1px solid white
-  background-color: transparent
-  border-radius: 50%
   background: center url(./img/arrow.png) no-repeat
+
+  &:hover
+    background-color: #00000023

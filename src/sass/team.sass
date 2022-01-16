@@ -1,0 +1,84 @@
+.team
+  padding: 153px $responsive-padding
+  padding-bottom: 150px
+
+  &__text-container
+    display: flex
+    justify-content: space-between
+
+  &__title
+    font-size: 36px
+    font-family: "SF Pro Display Medium"
+    font-weight: 300
+
+  &__description
+    width: 580px
+    padding-left: 40px
+    font-family: "Playfair Display Semibold"
+    font-size: 18px
+    border-left: 2px solid #DEDEDE
+    margin-top: -3px
+    line-height: 1.4
+
+.team__members-container
+  font-family: SF Pro Display Medium
+  display: flex
+  justify-content: space-between
+  margin-top: 122px
+
+.member-card
+  height: 350px
+  width: 260px
+  text-align: center
+  position: relative
+  overflow: hidden
+
+  &:hover
+    box-shadow: 0px 8px 32px rgba(34, 34, 34, 0.14)
+
+    .member-card__socials
+      display: flex
+      justify-content: center
+
+    .member-card__info
+      height: 140px
+      padding-top: 22px
+
+    .member-card__photo
+      margin: -15px
+
+.member-card__info
+  padding-top: 18px
+  position: absolute
+  width: 100%
+  bottom: 0
+  background-color: white
+  height: 106px
+
+.member-card__name
+  font-size: 18px
+  font-weight: 100
+  margin-bottom: 12px
+
+.member-card__area
+  font-size: 14px
+  text-transform: uppercase
+  color: rgba(34, 34, 34, 0.62)
+
+.member-card__socials
+  display: none
+  margin-top: 27px
+
+.twitter-link
+  background: url(./img/twitter.svg) no-repeat center
+
+.instagram-link
+  background: url(./img/instagram.svg) no-repeat center
+
+.facebook-link
+  background: url(./img/facebook.svg) no-repeat center
+
+.twitter-link, .instagram-link, .facebook-link
+  padding: 0 16px
+  height: 16px
+  width: 16px

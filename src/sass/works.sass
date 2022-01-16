@@ -1,0 +1,119 @@
+.works
+  margin-bottom: 100px
+  margin-top: 152px
+
+  &__header
+    padding: 0 $responsive-padding
+    color: #222222
+
+.works__controls
+  padding: 0 $responsive-padding
+  margin-top: 38px
+  margin-bottom: 63px
+  display: flex
+  justify-content: space-between
+
+.works-menu
+  display: flex
+
+  &__item
+    position: relative
+    display: block
+    text-transform: uppercase
+    margin-right: 28px
+    font-size: 14px
+    color: rgba(34, 34, 34, 0.62)
+    padding-bottom: 2px
+    font-family: 'SF Pro Display Medium'
+
+    & *:hover
+      cursor: pointer
+      color: #555555
+
+  input
+    display: none
+
+  input:checked + label
+    color: #222222
+
+  input:checked + label:before
+    content: ""
+    width: 22px
+    content: ""
+    display: block
+    position: absolute
+    bottom: -7px
+    height: 2px
+    background-color: #203CA7
+
+.works__buttons
+  display: flex
+  width: 60px
+  justify-content: space-between
+
+.works-btn
+  @include arrow-btn(180deg, rgba(34, 34, 34, 0.62), #203CA7)
+  position: relative
+  top: -2px
+  height: 21px
+  width: 24px
+  border: none
+  background-color: transparent
+
+  &:hover
+    cursor: pointer
+
+.works-btn_left
+  @include arrow-btn(0deg, rgba(34, 34, 34, 0.62), #203CA7)
+
+.works-galery
+  display: grid
+  grid-template-columns: repeat(4, 25%)
+
+.works-galery__img-container
+  position: relative
+  img
+    width: 100%
+    display: block
+
+.work-card
+  color: white
+  position: absolute
+  display: flex
+  flex-direction: column
+
+  inset: 0
+  padding-top: 34px
+  padding-left: 42px
+  opacity: 0
+  background-color: rgba(32, 60, 167, 0.8)
+  font-family: 'SF Pro Display Medium'
+
+  &:hover
+    opacity: 1
+
+  &__title
+    margin-bottom: 10px
+
+    font-size: 18px
+    font-weight: 300
+
+  &__address
+    font-style: normal
+    text-transform: uppercase
+    font-size: 12.3px
+    color: rgba(255, 255, 255, 0.6)
+
+  &__ref
+    @include arrow-btn(90deg, white, white)
+    display: block
+    color: white
+    width: 52px
+    height: 52px
+    margin-top: 186px
+    border: 1px solid white
+    background-color: transparent
+    border-radius: 50%
+    transform: rotate(-90deg)
+    &:hover
+      background-color: #00000023

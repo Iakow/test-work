@@ -4,47 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Special modern design</title>
     <link rel="stylesheet" href="index.sass" />
   </head>
 
   <body>
     <div class="container">
-      <div class="main">
-        <div class="header">
+      <main class="main">
+        <div class="main__header">
           <span class="logo"></span>
-          <button class="burger"></button>
+          <button class="burger-btn"></button>
         </div>
 
-        <p class="tagline">
+        <h1 class="main__tagline">
           We Love <br />
           Modern Design
-        </p>
+        </h1>
 
         <nav class="main-menu">
-          <ul>
-            <li><a href="#">Welcome</a></li>
-            <li><a href="#">Interior</a></li>
-            <li><a href="#">Exterior</a></li>
-            <li><a href="#">Landscape</a></li>
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a href="#">Welcome</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">Interior</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">Exterior</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">Landscape</a>
+            </li>
           </ul>
         </nav>
 
-        <button class="go-down"></button>
-      </div>
-    </div>
+        <a href="#about" class="go-down"></a>
+      </main>
 
-    <!-- ABOUT -->
-    <div class="container">
-      <section class="about">
-        <div class="text">
-          <h2>About Special Mod</h2>
-          <div class="description">
-            <h3>
+      <section class="about" id="about">
+        <div class="about__text-container">
+          <h2 class="about__title">About Special Mod</h2>
+          <div class="about__description">
+            <p class="about__description-head">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
               aliquam, purus sit amet luctus venenatis.
-            </h3>
-            <p>
+            </p>
+
+            <p class="about__description-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
               aliquam, purus sit amet luctus venenatis, lectus magna fringilla
               urna, porttitor rhoncus dolor purus non enim praesent elementum
@@ -55,43 +61,520 @@
           </div>
         </div>
 
-        <div class="features">
-          <ul>
-            <li>
-              <div class="feature-item">
-                <span class="icon"></span>
-                <h4>Interior Design</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                  aliquam, purus sit amet luctus venenatis
-                </p>
-              </div>
+        <ul class="about__features">
+          <li>
+            <div class="feature">
+              <span class="feature__icon">
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask id="path-1-inside-1_6_55" fill="white">
+                    <rect width="30" height="30" rx="2" />
+                  </mask>
+                  <rect
+                    width="30"
+                    height="30"
+                    rx="2"
+                    stroke="#203CA7"
+                    stroke-width="6"
+                    mask="url(#path-1-inside-1_6_55)"
+                  />
+                </svg>
+              </span>
+              <h3 class="feature__header">Interior Design</h3>
+              <p class="feature__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                aliquam, purus sit amet luctus venenatis
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="feature">
+              <span class="feature__icon feature__icon--triangle">
+                <svg
+                  width="34"
+                  height="30"
+                  viewBox="0 0 34 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.8097 1.61146C16.8952 1.46285 17.1048 1.46284 17.1903 1.61146L32.4668 28.1582C32.558 28.3167 32.439 28.5 32.2765 28.5H1.72351C1.561 28.5 1.44204 28.3167 1.53324 28.1582L16.8097 1.61146Z"
+                    stroke="#203CA7"
+                    stroke-width="3"
+                  />
+                </svg>
+              </span>
+              <h3 class="feature__header">Exterior Desing</h3>
+              <p class="feature__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                aliquam, purus sit amet luctus venenatis
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="feature">
+              <span class="feature__icon">
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="15"
+                    cy="15"
+                    r="13.5"
+                    stroke="#203CA7"
+                    stroke-width="3"
+                  />
+                </svg>
+              </span>
+              <h3 class="feature__header">Landscape Design</h3>
+              <p class="feature__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                aliquam, purus sit amet luctus venenatis
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="works">
+        <h2 class="works__header">Featured Works</h2>
+
+        <div class="works__controls">
+          <ul class="works-menu">
+            <li class="works-menu__item">
+              <input type="radio" name="x" id="works-filter-1" checked />
+              <label for="works-filter-1">All works</label>
+              <span></span>
             </li>
-            <li>
-              <div class="feature-item">
-                <span class="icon"></span>
-                <h4>Exterior Desing</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                  aliquam, purus sit amet luctus venenatis
-                </p>
-              </div>
+
+            <li class="works-menu__item">
+              <input type="radio" name="x" id="works-filter-2" />
+              <label for="works-filter-2">Interior</label>
+              <span></span>
             </li>
-            <li>
-              <div class="feature-item">
-                <span class="icon"></span>
-                <h4>Landscape Design</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                  aliquam, purus sit amet luctus venenatis
-                </p>
-              </div>
+
+            <li class="works-menu__item">
+              <input type="radio" name="x" id="works-filter-3" />
+              <label for="works-filter-3">Exterior</label>
+              <span></span>
+            </li>
+
+            <li class="works-menu__item">
+              <input type="radio" name="x" id="works-filter-4" />
+              <label for="works-filter-4">Landscape</label>
+              <span></span>
             </li>
           </ul>
-          <div class="feature"></div>
-          <div class="feature"></div>
-          <div class="feature"></div>
+
+          <div class="works__buttons">
+            <button class="works-btn"></button>
+            <button class="works-btn works-btn_left"></button>
+          </div>
         </div>
+
+        <div class="works-galery">
+          <div class="works-galery__img-container">
+            <img src="img/work_1.jpg" alt="" />
+            <div class="work-card">
+              <h3 class="work-card__title">Consectetur Adip</h3>
+              <address class="work-card__address">London / England</address>
+              <a class="work-card__ref" href="#"></a>
+            </div>
+          </div>
+
+          <div class="works-galery__img-container">
+            <img src="img/work_2.jpg" alt="" />
+            <div class="work-card">
+              <h3 class="work-card__title">Consectetur Adip</h3>
+              <address class="work-card__address">London / England</address>
+              <a class="work-card__ref" href="#"></a>
+            </div>
+          </div>
+
+          <div class="works-galery__img-container">
+            <img src="img/work_3.jpg" alt="" />
+            <div class="work-card">
+              <h3 class="work-card__title">Consectetur Adip</h3>
+              <address class="work-card__address">London / England</address>
+              <a class="work-card__ref" href="#"></a>
+            </div>
+          </div>
+
+          <div class="works-galery__img-container">
+            <img src="img/work_4.jpg" alt="" />
+            <div class="work-card">
+              <h3 class="work-card__title">Consectetur Adip</h3>
+              <address class="work-card__address">London / England</address>
+              <a class="work-card__ref" href="#"></a>
+            </div>
+          </div>
+
+          <div class="works-galery__img-container">
+            <img src="img/work_5.jpg" alt="" />
+            <div class="work-card">
+              <h3 class="work-card__title">Consectetur Adip</h3>
+              <address class="work-card__address">London / England</address>
+              <a class="work-card__ref" href="#"></a>
+            </div>
+          </div>
+
+          <div class="works-galery__img-container">
+            <img src="img/work_6.jpg" alt="" />
+            <div class="work-card">
+              <h3 class="work-card__title">Consectetur Adip</h3>
+              <address class="work-card__address">London / England</address>
+              <a class="work-card__ref" href="#"></a>
+            </div>
+          </div>
+
+          <div class="works-galery__img-container">
+            <img src="img/work_7.jpg" alt="" />
+            <div class="work-card">
+              <h3 class="work-card__title">Consectetur Adip</h3>
+              <address class="work-card__address">London / England</address>
+              <a class="work-card__ref" href="#"></a>
+            </div>
+          </div>
+
+          <div class="works-galery__img-container">
+            <img src="img/work_8.jpg" alt="" />
+            <div class="work-card">
+              <h3 class="work-card__title">Consectetur Adip</h3>
+              <address class="work-card__address">London / England</address>
+              <a class="work-card__ref" href="#"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="workflow">
+        <div class="workflow__text-container">
+          <h2 class="workflow__titile">Our Work Flow</h2>
+          <p class="workflow__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+            purus sit amet luctus venenatis.
+          </p>
+        </div>
+
+        <div class="workflow-grid">
+          <img src="./img/workflow_1.jpg" alt="" />
+
+          <div class="workflow-highlight-1">
+            <img src="./img/worflow-inspiration.svg" alt="" />
+            <h3>Inspiration</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor rhoncus dolor purus non enim praesent elementum
+              facilisis leo, vel fringilla est ullamcorper eget nulla facilisi
+              etiam dignissim diam quis enim lobortis scelerisque fermentum dui
+              faucibus in ornare.
+            </p>
+          </div>
+
+          <div class="workflow-highlight-2">
+            <img src="./img/workflow-design.svg" alt="" />
+            <h3>Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor rhoncus dolor purus non enim praesent elementum
+              facilisis leo, vel fringilla est ullamcorper eget nulla facilisi
+              etiam dignissim diam quis enim lobortis scelerisque fermentum dui
+              faucibus in ornare.
+            </p>
+          </div>
+
+          <img src="./img/workflow_2.jpg" alt="" />
+
+          <img src="./img/workflow_3.jpg" alt="" />
+
+          <div class="workflow-highlight-3">
+            <img src="./img/worflow-create.svg" alt="" />
+            <h3>Create</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor rhoncus dolor purus non enim praesent elementum
+              facilisis leo, vel fringilla est ullamcorper eget nulla facilisi
+              etiam dignissim diam quis enim lobortis scelerisque fermentum dui
+              faucibus in ornare.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <h2 class="services__title">Our Services</h2>
+        <div class="services__highlights">
+          <div class="services__highlight">
+            <img src="./img/services-interior.svg" alt="" />
+            <h3>Interior</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis
+            </p>
+          </div>
+
+          <div class="services__highlight">
+            <img src="./img/services-exterior.svg" alt="" />
+            <h3>Exterior</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet
+            </p>
+          </div>
+
+          <div class="services__highlight">
+            <img src="./img/services-landscape..svg" alt="" />
+            <h3>Landscape</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet
+            </p>
+          </div>
+
+          <div class="services__highlight">
+            <img src="./img/services-inspiration.svg" alt="" />
+            <h3>Inspiration</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="team">
+        <div class="team__text-container">
+          <h2 class="team__title">Our Work Flow</h2>
+          <!-- <div class="team__description"> -->
+          <p class="team__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+            purus sit amet luctus venenatis, lectus magna fringilla urna,
+            porttitor rhoncus dolor purus non enim praesent
+          </p>
+          <!--  </div> -->
+        </div>
+
+        <div class="team__members-container">
+          <figure class="member-card">
+            <img class="member-card__photo" src="./img/member-1.jpg" alt="" />
+            <figcaption class="member-card__info">
+              <p class="member-card__name">Kylie Stewart</p>
+              <p class="member-card__area">Designer</p>
+              <div class="member-card__socials">
+                <a class="twitter-link" href=""> </a>
+                <a class="instagram-link" href=""> </a>
+                <a class="facebook-link" href=""> </a>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="member-card">
+            <img class="member-card__photo" src="./img/member-2.jpg" alt="" />
+            <figcaption class="member-card__info">
+              <p class="member-card__name">Cooper Fisher</p>
+              <p class="member-card__area">Co-founder</p>
+              <div class="member-card__socials">
+                <a class="twitter-link" href=""> </a>
+                <a class="instagram-link" href=""> </a>
+                <a class="facebook-link" href=""> </a>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="member-card">
+            <img src="./img/member-3.jpg" alt="" />
+            <figcaption class="member-card__info">
+              <p class="member-card__name">Cooper Fisher</p>
+              <p class="member-card__area">CEO</p>
+              <div class="member-card__socials">
+                <a class="twitter-link" href=""> </a>
+                <a class="instagram-link" href=""> </a>
+                <a class="facebook-link" href=""> </a>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="member-card">
+            <img src="./img/member-4.jpg" alt="" />
+            <figcaption class="member-card__info">
+              <p class="member-card__name">Diane Pickford</p>
+              <p class="member-card__area">Manager</p>
+              <div class="member-card__socials">
+                <a class="twitter-link" href=""> </a>
+                <a class="instagram-link" href=""> </a>
+                <a class="facebook-link" href=""> </a>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <h2 class="testimonials__title">Testimonials</h2>
+
+        <div class="testimonials-container">
+          <figure class="testimonial">
+            <blockquote class="testimonial__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor rhoncus dolor purus non enim praesent elementum
+              facilisis leo, vel fringilla
+            </blockquote>
+
+            <figcaption class="testimonial__user">
+              <img
+                class="testimonial__user-avatar"
+                src="./img/avatar.jpg"
+                alt=""
+              />
+              <div class="testimonial__user-info">
+                <p class="testimonial__user-name">Brooklyn Simmons</p>
+                <p class="testimonial__user-job">Abbel bbc / Co-founder</p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <div class="testimonials__controlls">
+            <button class="testimonials__btn-left"></button>
+            <button class="testimonials__btn-right"></button>
+            <span class="testimonials__numbers">1-6</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="blogposts">
+        <div class="blogposts__text-container">
+          <h2 class="blogposts__title">Blog Posts</h2>
+          <ul class="blogposts-filter">
+            <li>
+              <input type="radio" name="x" id="filter-1" checked />
+              <label class="filter__item" for="filter-1">Latest Posts</label>
+            </li>
+
+            <li>
+              <input type="radio" name="x" id="filter-2" />
+              <label class="filter__item" for="filter-2">Interior</label>
+            </li>
+
+            <li>
+              <input type="radio" name="x" id="filter-3" />
+              <label class="filter__item" for="filter-3">Exterior</label>
+            </li>
+            <li>
+              <input type="radio" name="x" id="filter-4" />
+              <label class="filter__item" for="filter-4">Landscape</label>
+            </li>
+            <li>
+              <input type="radio" name="x" id="filter-5" />
+              <label class="filter__item" for="filter-5">Interaction</label>
+            </li>
+          </ul>
+
+          <a class="blogposts-link" href="#">All Blog Posts <span></span></a>
+        </div>
+
+        <!-- TODO заменить картинки постов -->
+        <div class="blogposts__posts-container">
+          <a href="">
+            <figure class="post">
+              <span class="post__label">interior</span>
+              <img src="./img/post-1.jpg" alt="" />
+              <figcaption class="post__info-container">
+                <time class="post__time" datetime="2021-05-03"
+                  >May 03, 2021</time
+                >
+                <p class="post__text">
+                  Lorem ipsum dolor sit amet, adipiscing elit ut aliquam, purus
+                  sit amet luctus
+                </p>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a href="">
+            <figure class="post">
+              <span class="post__label">exterior</span>
+              <img src="./img/post-2.jpg" alt="" />
+              <figcaption class="post__info-container">
+                <time class="post__time" datetime="2021-05-02">May 02, 2021</time>
+                <p class="post__text">
+                  Lorem ipsum dolor sit amet, adipiscing elit ut aliquam, purus
+                </p>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a href="">
+            <figure class="post">
+              <span class="post__label">exterior</span>
+              <img src="./img/post-3.jpg" alt="" />
+              <figcaption class="post__info-container">
+                <time class="post__time" datetime="2021-05-01">May 01, 2021</time>
+                <p class="post__text">
+                  Lorem ipsum dolor sit amet, adipiscing elit ut aliquam, purus
+                  sit amet
+                </p>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <img class="contacts__map" src="./img/map.png" alt="" />
+
+        <form action="" class="contacts__form">
+          <h2 class="contacts__title">Testimonials</h2>
+
+          <input
+            class="contacts__field contacts__field_name"
+            type="text"
+            name="Name"
+            placeholder="Your Name"
+          />
+          <input
+            class="contacts__field contacts__field_phone"
+            type="tel"
+            name="Phone"
+            placeholder="Phone"
+          />
+          <input
+            class="contacts__field contacts__field_email"
+            type="email"
+            name="Email"
+            placeholder="Email"
+          />
+          <input
+            class="contacts__field contacts__field_message"
+            type="text"
+            name="Message"
+            placeholder="Message"
+          />
+
+          <button class="contacts__btn" type="submit">Send Message</button>
+
+          <footer class="contacts__footer">
+            <span class="logo contacts-logo"></span>
+            <span class="contacts__social">
+              <a class="twitter-link contacts__social-link" href=""> </a>
+              <a class="instagram-link contacts__social-link" href=""> </a>
+              <a class="facebook-link contacts__social-link" href=""> </a>
+          </footer>
+        </form>
       </section>
     </div>
   </body>

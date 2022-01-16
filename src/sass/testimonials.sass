@@ -1,0 +1,77 @@
+.testimonials
+  font-family: SF Pro Display Medium
+  width: 100%
+  display: flex
+
+  padding: 0 $responsive-padding
+  padding-top: 103px
+  padding-bottom: 106px
+  background-color: #203CA7
+  color: white
+
+.testimonials__title
+  width: 50%
+
+.testimonials-container
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  padding-left: 41px
+  width: 50%
+
+.testimonial__text
+  font-family: Playfair Display Semibold
+  letter-spacing: 1px
+  line-height: 1.6
+
+.testimonial__user
+  display: flex
+  margin-top: 45px
+  padding-bottom: 47px
+  margin-bottom: 49px
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+
+.testimonial__user-name
+  font-size: 18px
+
+.testimonial__user-info
+  padding-top: 6px
+  padding-left: 17px
+
+.testimonial__user-job
+  text-transform: uppercase
+  color: rgba(255, 255, 255, 0.62)
+  font-size: 14px
+  margin-top: 11px
+
+.testimonial__user-avatar
+  width: 64px
+  height: 64px
+  border-radius: 50%
+
+.testimonials__controlls
+  display: flex
+  width: 100%
+  justify-content: space-between
+  font-family: Playfair Display Semibold
+
+.testimonials__btn-left, .testimonials__btn-right
+  @include arrow-btn(180deg, rgba(255, 255, 255, 0.62), white)
+  background-color: transparent
+  border: none
+  height: 21px
+  width: 24px
+  border: none
+  background-color: transparent
+
+  &:hover
+    cursor: pointer
+
+.testimonials__btn-right
+  @include arrow-btn(0deg, rgba(255, 255, 255, 0.62), white)
+  margin-left: 13px
+
+.testimonials__numbers
+  flex-grow: 1
+  text-align: right
+  letter-spacing: 1px
