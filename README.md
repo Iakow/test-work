@@ -1,4 +1,4 @@
-# Тестовое задание от FairFly
+# Тестовое задание от Faifly
 
 1. Верстка под десктоп по [макету](https://www.figma.com/file/OAl1GOWYPACFOMrAvEytra/Test-task?node-id=4%3A23) из Figma
 
