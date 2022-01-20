@@ -1,22 +1,53 @@
 .blogposts
   width: 100%
   display: flex
-  padding-left: $responsive-padding
-  padding-right: $responsive-padding
+  padding-left: 120px
+  padding-right: 120px
   padding-top: 150px
   padding-bottom: 101px
   font-family: SF Pro Display Medium
+  @media (max-width: 1400px)
+    padding-left: 60px
+    padding-right: 60px
+  @media (max-width: 1200px)
+    flex-direction: column
+    padding-left: 0px
+    padding-right: 0px
+    padding-top: 110px
+  @media ( max-width: 600px  )
+    padding-bottom: 60px
+    padding-top: 60px
 
 .blogposts__text-container
   width: 25.9%
+  @media (max-width: 1400px)
+    width: 20%
+  @media (max-width: 1200px)
+    display: flex
+    flex-direction: column
+    width: 100%
+    padding-left: 60px
+    padding-right: 60px
+  @media (max-width: 900px)
+    padding-left: 20px
+    padding-right: 20px
 
 .blogposts__title
   margin-bottom: 56px
   line-height: 51px
   letter-spacing: 0.4px
+  @media (max-width: 1200px)
+    margin-bottom: 0
 
 .blogposts-filter
   margin-bottom: 43px
+  @media (max-width: 1200px)
+    margin-top: 50px
+    margin-bottom: 10px
+    display: flex
+    order: 3
+  @media ( max-width: 600px  )
+    flex-wrap: wrap
 
   input
     display: none
@@ -27,6 +58,10 @@
   font-size: 14px
   color: rgba(34, 34, 34, 0.62)
   padding-bottom: 20px
+  @media (max-width: 1200px)
+    margin-right: 20px
+  @media (max-width: 600px)
+    font-size: 11px
 
 .filter__item:hover
   color: #555555
@@ -54,11 +89,25 @@ input:checked + .filter__item
   display: flex
   justify-content: space-between
   flex-grow: 1
+  @media ( max-width: 1200px  )
+    justify-content: space-around
+  @media ( max-width: 600px  )
+    flex-wrap: wrap
 
 .post
   position: relative
   height: 440px
   width: 260px
+  @media ( max-width: 900px )
+    height: 330px
+    width: 185px
+  @media ( max-width: 600px  )
+    margin-bottom: 50px
+    margin-left: 10px
+    margin-right: 10px
+
+.post__img
+  width: 100%
 
 .post__info-container
   padding-top: 5px
@@ -66,12 +115,15 @@ input:checked + .filter__item
 .post__time
   font-size: 14px
   color: rgba(34, 34, 34, 0.62)
-  
+
 .post__text
   margin-top: 11px
   line-height: 26px
   font-family: SF Pro Display
   color: #222222
+  @media ( max-width: 900px )
+    font-size: 14px
+    line-height: 18px
 
 .post__label
   color: #203CA7

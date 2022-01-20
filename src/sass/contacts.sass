@@ -1,16 +1,57 @@
 .contacts
   display: flex
+  position: relative
   background-color: #222222
   color: white
+  @media ( max-width: 900px )
+    flex-direction: column
+    padding-top: 150px
+    align-items: center
+    justify-content: center
+
+.contacts__img-container
+  width: 700px
+  flex-shrink: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  @media ( max-width: 1200px )
+    width: 50%
+    padding-left: 46px
+  @media ( max-width: 900px )
+    width: 80%
+    padding-left: 0
+  @media ( max-width: 600px )
+    width: 90%
+
+.contacts__img
+  width: 100%
 
 .contacts__title
   padding-bottom: 27px
+  @media ( max-width: 900px )
+    position: absolute
+    display: flex
+    width: 100%
+    top: 50px
+    left: 0
+    text-align: center
+    justify-content: center
 
 .contacts__form
-  width: 50%
   padding-top: 103px
-  padding-left: 42px
+  padding-left: 46px
   padding-right: 120px
+  width: 50%
+  @media ( max-width: 1400px )
+    padding-right: 42px
+  @media ( max-width: 900px )
+    width: 100%
+    padding-right: 100px
+    padding-left: 100px
+  @media ( max-width: 600px )
+    padding-right: 20px
+    padding-left: 20px
 
 .contacts__field
   color: rgba(255, 255, 255, 0.32)
@@ -23,6 +64,8 @@
   border-bottom: 2px solid rgba(255, 255, 255, 0.2)
   font-family: SF Pro Display
   font-size: 16px
+  @media ( max-width: 600px )
+    width: 100%
 
 .contacts__btn
   width: 253px
@@ -34,15 +77,25 @@
   font-family: SF Pro Display
   font-size: 16px
   border-radius: 4px
+  cursor: pointer
+  
+
+  &:hover
+    background-color: #2644bd
+
+  &:active
+    background-color: #1f39a1
 
 .contacts__field_name, .contacts__field_message
   width: 100%
 
 .contacts__field_email
   float: right
+  @media ( max-width: 600px )
+    float: none
 
 .contacts__map
-  width: 50%
+  height: 100%
 
 .contacts__footer
   display: flex
@@ -51,9 +104,9 @@
   margin-top: 164px
   padding-top: 32px
   border-top: 2px solid rgba(255, 255, 255, 0.2)
-
-.contacts__social
-
+  @media ( max-width: 1200px )
+    margin-top: 70px
+    margin-bottom: 20px
 
 .contacts__social-link
   padding: 0

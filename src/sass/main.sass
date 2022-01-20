@@ -1,23 +1,31 @@
 .main
+  position: relative
   background-color: #264f83
   background-image: url(./img/Main-cover.jpg)
   height: 900px
   color: white
-  padding: 0 $responsive-padding
+  padding: 0 120px
+  @media (max-width: 1200px)
+    padding: 0 40px
+  @media (max-width: 600px)
+    padding: 0 20px
 
-  &__header
-    display: flex
+.main__header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 126px
+  @media ( max-width: 600px )
+    height: 60px
 
-    justify-content: space-between
-    align-items: center
-    height: 126px
-
-  &__tagline
-    margin-top: 346px
-    margin-bottom: 34px
-    font-size: 62px
-    line-height: 1.24
-    font-family: SF Pro Display Semibold
+.main__tagline
+  margin-top: 346px
+  margin-bottom: 34px
+  font-size: 62px
+  line-height: 1.24
+  font-family: SF Pro Display Semibold
+  @media ( max-width: 600px )
+    margin-top: 200px
 
 .logo
   display: block
@@ -31,7 +39,7 @@
   width: 26px
   background-color: transparent
   border: none
-  background-image: url(./img/burger.png)
+  background-image: url(./img/burger.svg)
 
 .main-menu
   font-size: 14px
@@ -39,24 +47,28 @@
   text-transform: uppercase
   color: rgba(255, 255, 255, 0.74)
 
-  &__list
-    display: flex
+.main-menu__list
+  display: flex
+  @media ( max-width: 600px )
+    flex-direction: column
 
-  &__item
-    position: relative
-    margin-right: 28px
+.main-menu__item
+  position: relative
+  margin-right: 28px
+  @media ( max-width: 600px )
+    margin-bottom: 20px
 
-    &:hover
-      color: white
+  &:hover
+    color: white
 
-    &:hover::after
-      content: ""
-      display: block
-      position: absolute
-      bottom: -12px
-      width: 22px
-      height: 2px
-      background-color: white
+  &:hover::after
+    content: ""
+    display: block
+    position: absolute
+    bottom: -12px
+    width: 22px
+    height: 2px
+    background-color: white
 
 .go-down
   @include arrow-btn(90deg, white, white)
@@ -65,6 +77,5 @@
   margin-top: 88px
   border: 1px solid white
   background: center url(./img/arrow.png) no-repeat
-
   &:hover
     background-color: #00000023

@@ -1,41 +1,44 @@
 .works
   margin-bottom: 100px
   margin-top: 152px
+  @media( max-width: 900px )
+    margin-top: 108px
+  @media( max-width: 600px )
+    margin-top: 80px
 
-  &__header
-    padding: 0 $responsive-padding
-    color: #222222
+.works__header
+  padding: 0 120px
+  color: #222222
+  @media( max-width: 1200px )
+    padding: 0 60px
+  @media( max-width: 900px )
+    padding: 0 20px
+  @media( max-width: 600px )
+    padding: 0
+    text-align: center
 
 .works__controls
-  padding: 0 $responsive-padding
+  padding: 0 120px
   margin-top: 38px
   margin-bottom: 63px
   display: flex
   justify-content: space-between
+  @media( max-width: 1200px )
+    padding: 0 60px
+    margin-bottom: 30px
+  @media( max-width: 900px )
+    padding: 0 20px
+    margin-bottom: 20px
+  @media( max-width: 600px )
+    padding: 0 10px
+    margin-bottom: 3px
 
 .works-menu
   display: flex
-
-  &__item
-    position: relative
-    display: block
-    text-transform: uppercase
-    margin-right: 28px
-    font-size: 14px
-    color: rgba(34, 34, 34, 0.62)
-    padding-bottom: 2px
-    font-family: 'SF Pro Display Medium'
-
-    & *:hover
-      cursor: pointer
-      color: #555555
-
   input
     display: none
-
   input:checked + label
     color: #222222
-
   input:checked + label:before
     content: ""
     width: 22px
@@ -45,11 +48,32 @@
     bottom: -7px
     height: 2px
     background-color: #203CA7
+    @media ( max-width: 600px )
+      bottom: 4px
+
+.works-menu__item
+  position: relative
+  display: block
+  text-transform: uppercase
+  margin-right: 28px
+  font-size: 14px
+  color: rgba(34, 34, 34, 0.62)
+  padding-bottom: 2px
+  font-family: 'SF Pro Display Medium'
+  & *:hover
+    cursor: pointer
+    color: #555555
+  @media ( max-width: 600px )
+    margin-right: 10px
+    font-size: 11px
+    height: 21px
 
 .works__buttons
   display: flex
   width: 60px
   justify-content: space-between
+  @media ( max-width: 400px )
+    display: none
 
 .works-btn
   @include arrow-btn(180deg, rgba(34, 34, 34, 0.62), #203CA7)
@@ -59,7 +83,6 @@
   width: 24px
   border: none
   background-color: transparent
-
   &:hover
     cursor: pointer
 
@@ -69,6 +92,8 @@
 .works-galery
   display: grid
   grid-template-columns: repeat(4, 25%)
+  @media ( max-width: 600px )
+    grid-template-columns: repeat(2, 50%)
 
 .works-galery__img-container
   position: relative
@@ -81,39 +106,60 @@
   position: absolute
   display: flex
   flex-direction: column
-
   inset: 0
   padding-top: 34px
   padding-left: 42px
   opacity: 0
   background-color: rgba(32, 60, 167, 0.8)
   font-family: 'SF Pro Display Medium'
+  @media( max-width: 1200px )
+    padding: 20px
+  @media ( max-width: 900px )
+    padding: 8px
+    padding-top: 18px
 
   &:hover
     opacity: 1
 
-  &__title
-    margin-bottom: 10px
-
-    font-size: 18px
-    font-weight: 300
-
-  &__address
-    font-style: normal
-    text-transform: uppercase
-    font-size: 12.3px
-    color: rgba(255, 255, 255, 0.6)
-
-  &__ref
-    @include arrow-btn(90deg, white, white)
-    display: block
-    color: white
-    width: 52px
-    height: 52px
-    margin-top: 186px
-    border: 1px solid white
+  @media ( max-width: 600px )
+    opacity: 1
     background-color: transparent
-    border-radius: 50%
-    transform: rotate(-90deg)
-    &:hover
-      background-color: #00000023
+
+.work-card__title
+  margin-bottom: 10px
+  font-size: 18px
+  font-weight: 300
+  @media ( max-width: 900px )
+    font-size: 16px
+  @media ( max-width: 600px )
+    font-size: 15px
+    margin-bottom: 4px
+
+.work-card__address
+  font-style: normal
+  text-transform: uppercase
+  font-size: 12.3px
+  color: rgba(255, 255, 255, 0.6)
+  @media ( max-width: 900px )
+    font-size: 12px
+  @media ( max-width: 600px )
+    font-size: 10px
+
+.work-card__ref
+  @include arrow-btn(90deg, white, white)
+  display: block
+  position: absolute
+  bottom: 32px
+  color: white
+  width: 52px
+  height: 52px
+  border: 1px solid white
+  background-color: transparent
+  border-radius: 50%
+  transform: rotate(-90deg)
+  @media ( max-width: 900px )
+    bottom: 4px
+    right: 4px
+    border: none
+  &:hover
+    background-color: #00000023

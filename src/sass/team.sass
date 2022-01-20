@@ -1,30 +1,69 @@
 .team
-  padding: 153px $responsive-padding
+  padding: 153px 120px
   padding-bottom: 150px
+  @media (max-width: 1400px)
+    padding: 153px 60px
+    padding-bottom: 100px
+  @media( max-width: 900px )
+    flex-direction: column
+    padding-top: 130px
+    padding-left: 20px
+    padding-right: 20px
+  @media( max-width: 600px )
+    padding-left: 0
+    padding-right: 0
 
-  &__text-container
-    display: flex
-    justify-content: space-between
+.team__text-container
+  display: flex
+  justify-content: space-between
+  @media( max-width: 900px )
+    flex-direction: column
 
-  &__title
-    font-size: 36px
-    font-family: "SF Pro Display Medium"
-    font-weight: 300
+.team__title
+  font-size: 36px
+  font-family: "SF Pro Display Medium"
+  font-weight: 300
+  @media (max-width: 1400px)
+    padding-left: 60px
+  @media (max-width: 1400px)
+    padding-left: 0px
+  @media (max-width: 600px)
+    text-align: center
 
-  &__description
-    width: 580px
-    padding-left: 40px
-    font-family: "Playfair Display Semibold"
-    font-size: 18px
-    border-left: 2px solid #DEDEDE
-    margin-top: -3px
-    line-height: 1.4
+.team__description
+  width: 580px
+  padding-left: 40px
+  font-family: "Playfair Display Semibold"
+  font-size: 18px
+  border-left: 2px solid #DEDEDE
+  margin-top: -3px
+  line-height: 1.4
+  @media( max-width: 1200px )
+    width: 50%
+    min-width: 434px
+    padding-left: 11px
+  @media( max-width: 900px )
+    align-self: end
+    margin-top: 50px
+    width: 70%
+  @media( max-width: 600px )
+    min-width: 0px
+    border: none
+    align-self: center
+    width: 90%
+    padding-left: 0
+    text-align: center
 
 .team__members-container
   font-family: SF Pro Display Medium
   display: flex
   justify-content: space-between
   margin-top: 122px
+  @media (max-width: 1400px)
+    flex-wrap: wrap
+    justify-content: space-around
+  @media (max-width: 900px)
+    margin-top: 80px
 
 .member-card
   height: 350px
@@ -32,6 +71,21 @@
   text-align: center
   position: relative
   overflow: hidden
+  @media (max-width: 1400px)
+    margin: 20px
+  @media (max-width: 700px)
+    margin: 0
+    margin-bottom: 30px
+  @media ( max-width: 600px )
+    box-shadow: 0px 8px 32px rgba(34, 34, 34, 0.14)
+    .member-card__socials
+      display: flex
+      justify-content: center
+    .member-card__info
+      height: 140px
+      padding-top: 22px
+    .member-card__photo
+      margin: -15px
 
   &:hover
     box-shadow: 0px 8px 32px rgba(34, 34, 34, 0.14)

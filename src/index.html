@@ -11,10 +11,10 @@
   <body>
     <div class="container">
       <main class="main">
-        <div class="main__header">
+        <header class="main__header">
           <span class="logo"></span>
           <button class="burger-btn"></button>
-        </div>
+        </header>
 
         <h1 class="main__tagline">
           We Love <br />
@@ -153,27 +153,27 @@
         <div class="works__controls">
           <ul class="works-menu">
             <li class="works-menu__item">
-              <input type="radio" name="x" id="works-filter-1" checked />
+              <input type="radio" name="works-ctrl" id="works-filter-1" checked />
               <label for="works-filter-1">All works</label>
-              <span></span>
+              
             </li>
 
             <li class="works-menu__item">
-              <input type="radio" name="x" id="works-filter-2" />
+              <input type="radio" name="works-ctrl" id="works-filter-2" />
               <label for="works-filter-2">Interior</label>
-              <span></span>
+              
             </li>
 
             <li class="works-menu__item">
-              <input type="radio" name="x" id="works-filter-3" />
+              <input type="radio" name="works-ctrl" id="works-filter-3" />
               <label for="works-filter-3">Exterior</label>
-              <span></span>
+             
             </li>
 
             <li class="works-menu__item">
-              <input type="radio" name="x" id="works-filter-4" />
+              <input type="radio" name="works-ctrl" id="works-filter-4" />
               <label for="works-filter-4">Landscape</label>
-              <span></span>
+             
             </li>
           </ul>
 
@@ -260,7 +260,7 @@
 
       <section class="workflow">
         <div class="workflow__text-container">
-          <h2 class="workflow__titile">Our Work Flow</h2>
+          <h2 class="workflow__title">Our Work Flow</h2>
           <p class="workflow__description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
             purus sit amet luctus venenatis.
@@ -268,7 +268,7 @@
         </div>
 
         <div class="workflow-grid">
-          <img src="./img/workflow_1.jpg" alt="" />
+          <img class="workflow-grid__pic-1" src="./img/workflow_1.jpg" alt="" />
 
           <div class="workflow-highlight-1">
             <img src="./img/worflow-inspiration.svg" alt="" />
@@ -296,9 +296,9 @@
             </p>
           </div>
 
-          <img src="./img/workflow_2.jpg" alt="" />
+          <img class="workflow-grid__pic-2" src="./img/workflow_2.jpg" alt="" />
 
-          <img src="./img/workflow_3.jpg" alt="" />
+          <img class="workflow-grid__pic-3" src="./img/workflow_3.jpg" alt="" />
 
           <div class="workflow-highlight-3">
             <img src="./img/worflow-create.svg" alt="" />
@@ -396,7 +396,7 @@
           </figure>
 
           <figure class="member-card">
-            <img src="./img/member-3.jpg" alt="" />
+            <img class="member-card__photo" src="./img/member-3.jpg" alt="" />
             <figcaption class="member-card__info">
               <p class="member-card__name">Cooper Fisher</p>
               <p class="member-card__area">CEO</p>
@@ -409,7 +409,7 @@
           </figure>
 
           <figure class="member-card">
-            <img src="./img/member-4.jpg" alt="" />
+            <img class="member-card__photo" src="./img/member-4.jpg" alt="" />
             <figcaption class="member-card__info">
               <p class="member-card__name">Diane Pickford</p>
               <p class="member-card__area">Manager</p>
@@ -461,25 +461,25 @@
           <h2 class="blogposts__title">Blog Posts</h2>
           <ul class="blogposts-filter">
             <li>
-              <input type="radio" name="x" id="filter-1" checked />
+              <input type="radio" name="blogposts-ctrl" id="filter-1" checked />
               <label class="filter__item" for="filter-1">Latest Posts</label>
             </li>
 
             <li>
-              <input type="radio" name="x" id="filter-2" />
+              <input type="radio" name="blogposts-ctrl" id="filter-2" />
               <label class="filter__item" for="filter-2">Interior</label>
             </li>
 
             <li>
-              <input type="radio" name="x" id="filter-3" />
+              <input type="radio" name="blogposts-ctrl" id="filter-3" />
               <label class="filter__item" for="filter-3">Exterior</label>
             </li>
             <li>
-              <input type="radio" name="x" id="filter-4" />
+              <input type="radio" name="blogposts-ctrl" id="filter-4" />
               <label class="filter__item" for="filter-4">Landscape</label>
             </li>
             <li>
-              <input type="radio" name="x" id="filter-5" />
+              <input type="radio" name="blogposts-ctrl" id="filter-5" />
               <label class="filter__item" for="filter-5">Interaction</label>
             </li>
           </ul>
@@ -492,7 +492,9 @@
           <a href="">
             <figure class="post">
               <span class="post__label">interior</span>
-              <img src="./img/post-1.jpg" alt="" />
+              <div class="post__img-container">
+                <img class="post__img" src="./img/post-1.jpg" alt="" />
+              </div>
               <figcaption class="post__info-container">
                 <time class="post__time" datetime="2021-05-03"
                   >May 03, 2021</time
@@ -508,7 +510,7 @@
           <a href="">
             <figure class="post">
               <span class="post__label">exterior</span>
-              <img src="./img/post-2.jpg" alt="" />
+              <img class="post__img" src="./img/post-2.jpg" alt="" />
               <figcaption class="post__info-container">
                 <time class="post__time" datetime="2021-05-02">May 02, 2021</time>
                 <p class="post__text">
@@ -521,7 +523,7 @@
           <a href="">
             <figure class="post">
               <span class="post__label">exterior</span>
-              <img src="./img/post-3.jpg" alt="" />
+              <img  class="post__img"src="./img/post-3.jpg" alt="" />
               <figcaption class="post__info-container">
                 <time class="post__time" datetime="2021-05-01">May 01, 2021</time>
                 <p class="post__text">
@@ -535,7 +537,10 @@
       </section>
 
       <section class="contacts">
-        <img class="contacts__map" src="./img/map.png" alt="" />
+        <div class="contacts__img-container">
+          <img class="contacts__img" src="./img/map.png" alt="">
+        </div>
+        
 
         <form action="" class="contacts__form">
           <h2 class="contacts__title">Testimonials</h2>
@@ -565,7 +570,7 @@
             placeholder="Message"
           />
 
-          <button class="contacts__btn" type="submit">Send Message</button>
+          <button class="contacts__btn" >Send Message</button>
 
           <footer class="contacts__footer">
             <span class="logo contacts-logo"></span>
