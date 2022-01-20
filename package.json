@@ -5,9 +5,13 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel",
-    "build": "parcel build"
+    "prestart": "npm run clear",
+    "build": "parcel build --public-url ./",
+    "prebuild": "npm run clear",
+    "clear": "shx rm -rf dist/*",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +19,8 @@
     "@parcel/transformer-sass": "^2.1.1",
     "autoprefixer": "^10.4.2",
     "gh-pages": "^3.2.3",
-    "parcel": "^2.2.1"
+    "parcel": "^2.2.1",
+    "shx": "^0.3.4"
   },
   "postcss": {
     "plugins": {
