@@ -1,7 +1,6 @@
 const example = [5, 8, 2, 1, 15, 2, 3, 5, 9, 11, 10, 4, 3, 14, 1, 7, 10, 3, 2, 13];
 
 function mountApp() {
-  const body = document.body;
   document.body.innerHTML = `
     <div id="app">
       <span id="max-label">
@@ -49,3 +48,5 @@ function barChart(data = example) {
 }
 
 window.barChart = barChart;
+
+console.warn('To see the chart call barChart()')
